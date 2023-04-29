@@ -1,3 +1,11 @@
+'''
+Author: dylansisyphe dylansisyphe@gmail.com
+Date: 2023-04-28 21:54:50
+LastEditors: dylansisyphe dylansisyphe@gmail.com
+LastEditTime: 2023-04-29 10:46:02
+FilePath: /Super-mario-bros-PPO-pytorch/test.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 """
 @author: Viet Nguyen <nhviet1009@gmail.com>
 """
@@ -15,11 +23,11 @@ import torch.nn.functional as F
 def get_args():
     parser = argparse.ArgumentParser(
         """Implementation of model described in the paper: Proximal Policy Optimization Algorithms for Contra Nes""")
-    parser.add_argument("--world", type=int, default=1)
-    parser.add_argument("--stage", type=int, default=1)
+    parser.add_argument("--world", type=int, default=3)
+    parser.add_argument("--stage", type=int, default=2)
     parser.add_argument("--action_type", type=str, default="simple")
     parser.add_argument("--saved_path", type=str, default="trained_models")
-    parser.add_argument("--output_path", type=str, default="output")
+    parser.add_argument("--output_path", type=str, default="output_self")
     args = parser.parse_args()
     return args
 
